@@ -2,6 +2,30 @@
 
 **Applied Search Intelligence: Google Search Ranking & Discoverability**
 
+## 🎓 Capstone — CTR / Engagement Opportunity Scoring
+
+**Deployed paper:** https://sukrit004.github.io/flyrank-ml-internship/
+
+Can search-performance and content signals identify visible pages that deserve a CTR/engagement
+review? A transparent baseline rule (CTR below the norm for a page's search position, weighted
+by exposure) is compared against a Random Forest under a client-level held-out split, on 28,795
+visible pages across 32 anonymized clients. **The baseline wins**: Precision@50 of 0.84 vs. 0.74
+for the model (ROC-AUC 0.61) — the simpler, fully-readable rule is what's carried into the final
+ranked review queue. Full writeup, methodology, limitations, and the reproducibility note on an
+earlier unreproducible cached result: see the paper above.
+
+**Reproduce it:**
+```bash
+python3 scripts/build_capstone_artifacts.py   # regenerates every chart/number from raw data
+jupyter nbconvert --to notebook --execute --inplace work/notebooks/capstone.ipynb
+```
+Capstone notebook: [`work/notebooks/capstone.ipynb`](work/notebooks/capstone.ipynb) · Action
+playbook: [`work/notebooks/w07_action_playbook.ipynb`](work/notebooks/w07_action_playbook.ipynb)
+· Full ranked queue: [`work/outputs/action_playbook.csv`](work/outputs/action_playbook.csv)
+
+---
+
+
 This is the starting point for the FlyRank ML Internship. You **clone it into your own public
 repo** (one click — *Use this template*), build everything there, and submit that repo URL on
 each assignment in your portal — it's your workspace, your submission, and your portfolio all

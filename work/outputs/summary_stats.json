@@ -1,0 +1,74 @@
+{
+  "rows_total": 30000,
+  "rows_visible": 28795,
+  "n_clients": 32,
+  "label_positive": 16262,
+  "label_negative": 13738,
+  "label_rate": 0.5420666666666667,
+  "train_rows": 23837,
+  "test_rows": 6163,
+  "train_clients": 25,
+  "test_clients": 7,
+  "roc_auc": 0.6145385259389705,
+  "model_precision_at_50": 0.74,
+  "baseline_precision_at_50": 0.84,
+  "base_rate_test": 0.5109524582184002,
+  "ctr_position_correlation": -0.08014691740396851,
+  "ctr_by_position_tier": {
+    "top_3": 2.7645,
+    "page_1": 0.6525,
+    "striking": 0.3232,
+    "page_3_5": 0.2225,
+    "deep": 0.1502
+  },
+  "action_mix": {
+    "review_ctr": 13591,
+    "review_ctr_and_content": 10180,
+    "no_action": 3684,
+    "monitor_decline_risk": 1340
+  },
+  "playbook_rows": 28795,
+  "top_features": [
+    {
+      "feature_clean": "impressions_90d",
+      "importance": 0.1684
+    },
+    {
+      "feature_clean": "content_age_days",
+      "importance": 0.1192
+    },
+    {
+      "feature_clean": "avg_position",
+      "importance": 0.1173
+    },
+    {
+      "feature_clean": "scroll_rate",
+      "importance": 0.0479
+    },
+    {
+      "feature_clean": "ctr",
+      "importance": 0.0431
+    },
+    {
+      "feature_clean": "clicks_90d",
+      "importance": 0.0356
+    },
+    {
+      "feature_clean": "search_volume",
+      "importance": 0.0333
+    },
+    {
+      "feature_clean": "position_tier_top_3",
+      "importance": 0.0329
+    },
+    {
+      "feature_clean": "pageviews_90d",
+      "importance": 0.0308
+    },
+    {
+      "feature_clean": "days_since_last_update",
+      "importance": 0.0305
+    }
+  ],
+  "reproducibility_note": "An earlier session of w05_model.ipynb cached Precision@50=0.82 for the model, but its data-loading cells had since been cleared, so that number could not be reproduced. Rebuilding the notebook to run top-to-bottom on the same split/seed reproduces ROC-AUC ~0.6145 (materially unchanged) but Precision@50=0.74 (baseline advantage widens from 0.02 to 0.10). This 0.74/0.84 pair is what is reported throughout the capstone; both runs agree the transparent baseline meets or beats the Random Forest."
+}
