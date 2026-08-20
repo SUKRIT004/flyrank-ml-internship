@@ -79,6 +79,12 @@
     font-family: var(--serif); font-size: 19px; line-height: 1.6;
     color: var(--ink-soft); margin: 0 0 8px; max-width: 68ch;
   }
+  .byline {
+    font-family: var(--sans); font-size: 14px; color: var(--ink-faint);
+    margin: 22px 0 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  }
+  .byline-name { color: var(--ink); font-weight: 600; }
+  .byline-sep { color: var(--line); }
   .meta-row {
     margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px;
   }
@@ -247,6 +253,14 @@
       the metric that matters for this decision, so it is the one carried into the ranked review
       queue below.
     </p>
+    <p class="byline">
+      <span class="byline-name">Sukrit</span>
+      <span class="byline-sep">&middot;</span>
+      <span>FlyRank ML Internship &mdash; Machine Learning Track</span>
+      <span class="byline-sep">&middot;</span>
+      <span>August 2026</span>
+    </p>
+
     <div class="meta-row">
       <span class="meta-pill">28,795 visible pages scored</span>
       <span class="meta-pill">32 clients</span>
@@ -615,7 +629,7 @@
 
 <footer>
   <div class="wrap">
-    <p>CTR / Engagement Opportunity Scoring &middot; FlyRank ML Internship Capstone &middot; Machine Learning track</p>
+    <p>CTR / Engagement Opportunity Scoring &middot; Author: Sukrit &middot; FlyRank ML Internship Capstone &middot; Machine Learning track</p>
     <div class="credit">
       Built on the FlyRank ML Internship dataset &mdash; <a href="https://flyrank.ai">flyrank.ai</a>.
       Source and reproducibility notebooks: <a href="https://github.com/SUKRIT004/flyrank-ml-internship">GitHub repository</a>.
